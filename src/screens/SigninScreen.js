@@ -21,7 +21,7 @@ export default function SigninScreen() {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await Axios.post('/api/users/signin', {
+      const { data } = await Axios.post('https://amazona-production-c02a.up.railway.app/api/users/signin', {
         email,
         password,
       });

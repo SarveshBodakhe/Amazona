@@ -79,7 +79,7 @@ export default function ProductListScreen() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data } = await axios.get(`/api/products/admin/page=${page} `, {
+        const { data } = await axios.get(`https://amazona-production-c02a.up.railway.app/api/products/admin/page=${page} `, {
           headers: { Authorization: `Bearer ${userInfo.token}` },
         });
 
